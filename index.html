@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>Coffee Suscription - Landing Page</title>
+</head>
+<body>
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" title="menu" class="block hamburger md:hidden">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      <!-- Logo -->
+      <div class="pt-2">
+                <img src="images/logo.png" class="w-40" alt=""> 
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden md:flex space-x-6">
+                <a href="" class="hover:text-darkGraishBlue">Pricing</a>
+                <a href="" class="hover:text-darkGraishBlue">Products</a>
+                <a href="" class="hover:text-darkGraishBlue">About Us</a>
+                
+            </div>
+             <!-- Button -->
+        <a href="#" class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Shop</a>
+        </div>
+      </div>
+         <!-- Mobile Menu -->
+         <div class="md:hidden">
+            <div
+              id="menu"
+              class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+              <ul>
+                <li class="list-none">
+                  <a href="#">Pricing</a>
+                </li>
+                <li class="list-none">
+                  <a href="#">Products</a>
+                </li>
+                <li class="list-none">
+                  <a href="#">About Us</a>
+                </li>
+              </ul>
+              
+              
+            </div>
+          </div>
+    </nav>
+
+     <!-- Hero Section -->
+     <section id="hero">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+        >
+          <!-- Left item -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+            <h1
+              class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+            >
+              Having the best coffee in the world was never this easy
+            </h1>
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+              Brew Box makes it simple to get your favorite coffee flavors every month.
+              We offer customizable orders with free shipping, just like you like it. 
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <a
+                href="#"
+                class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+                >Get a Box</a>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img src="images/brew1.png" alt="" />
+          </div>
+        </div>
+      </section>
+  
+      <!-- Features Section -->
+      <section id="features" class="mb-20">
+        <!-- Flex container -->
+        <div
+          class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+        >
+          <!-- What's Different -->
+          <div class="flex flex-col space-y-12 md:w-1/2">
+            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+              What's different about Brew Box?
+            </h2>
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+              Brew provides you with a product you'll love, that you will actually use and enjoy everyday. 
+              Our boxes are tailor-made for your taste and needs. There's several options to pick the one that suits you best.
+            </p>
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+              We strive to provide quality products and excellent client support, making this suscription one you'll never regret.
+            </p>
+          </div>
+  
+          <!-- Numbered List -->
+          <div class="flex flex-col space-y-8 md:w-1/2">
+            <!-- List Item 1 -->
+            <div
+              class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+            >
+              <!-- Heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                  >
+                    01
+                  </div>
+                  <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    World's best coffee beans
+                  </h3>
+                </div>
+              </div>
+  
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                  World's best coffee beans
+                </h3>
+                <p class="text-darkGrayishBlue">
+                  In Bean Box we have a wide variety of quality coffee beans to suit your taste buds. 
+                  Coffee from different climates and locations, different roast techniques, as whole beans or freshly grinded.
+                </p>
+              </div>
+            </div>
+  
+            <!-- List Item 2 -->
+            <div
+              class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+            >
+              <!-- Heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                  >
+                    02
+                  </div>
+                  <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    Most Convenient Delivery
+                  </h3>
+                </div>
+              </div>
+  
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                  Most Convenient Delivery
+                </h3>
+                <p class="text-darkGrayishBlue">
+                  Brew Box comes with free shipping, sending the best flavors directly to your home with no extra cost. 
+                </p>
+              </div>
+            </div>
+  
+            <!-- List Item 3 -->
+            <div
+              class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+            >
+              <!-- Heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                  <div
+                    class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                  >
+                    03
+                  </div>
+                  <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    Everything you need in one place
+                  </h3>
+                </div>
+              </div>
+  
+              <div>
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                  Everything you need in one place
+                </h3>
+                <p class="text-darkGrayishBlue">
+                  Our store has all you need to brew the best coffee.
+                  From a French press to recipe books and gift boxes, we got you covered.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+
+      <!-- CTA Section -->
+      <section id="cta" class="bg-brightRed mb-20">
+        <!-- Flex Container -->
+        <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+          <!-- Heading -->
+          <h2 class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left">
+           Use code "SampleBox" and <br>
+           get 10% off your first box </h2> 
+          
+          <!-- Button -->
+          <div>
+            <a href="#" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-veryDarkBlue">Get a Box</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fancy Squares -->
+
+<section class="grid place-items-center min-h-screen">
+  <h1 class="text-4xl font-bold pb-4">Enjoy more with Brew Box</h1>
+    <div class="p-4 max-w-5xl grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+      <div class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square p-2">
+        <p class="font-sans font-semibold text-lg text-center pt-8">Check out our recommendations in the product descriptions to find the most suitable beans for your recipe. </p>
+      </div>
+      
+      <img src="images/a576.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/b455.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/d859.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/e932.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/f802.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/g717.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/i709.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/k990.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/l808.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <img src="images/m915.jpg" class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square" alt="">
+      <div class="h-16 xs:h-auto xs:aspect-square sm:h-auto sm:aspect-square p-2">
+        <p class="font-sans font-semibold text-lg text-center py-6"> Discover new ways to enjoy your favorite drink. Recipe books all the tools you need are available on our shop.</p>
+      </div>
+    </div>
+</section>
+  
+<!-- Pricing -->
+
+<section class="min-h-screen  bg-brightRed flex flex-wrap items-center  justify-center mb-20">
+            
+  <div class="flex flex-col sm:flex-col lg:flex-row xl:flex-row md:flex-row justify-center items center  container">
+  <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-white z-30">
+      <h1 class="text-gray-500 font-semibold text-xl ">Starter</h1>
+          <div class="text-center py-4 px-7">
+              <h1 class="text-gray-700 text-4xl font-black">$29.00</h1>
+              <p class="text-gray-500  mt-2">Monthly</p>
+              <p class="text-gray-500  mt-2">FREE SHIPPING</p>
+              
+          </div>
+          <div class="h-px bg-gray-200"></div>
+          <div class="text-center mt-3">
+              <p class="text-sm text-gray-400">
+              Pick up to 4 flavours from our artisan coffees line, select prentation of whole bean or fresh ground and get 4 bags monthly (size: 1.8 oz. each)
+              </p>
+          </div>
+          <button class="w-full mt-6 mb-3 py-2 text-white font-semibold bg-brightRed hover:shadow-xl duration-200 hover:bg-brightRedLight">Buy Now</button>
+      </div>
+      <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-brightRedLight transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40  shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl">
+          <h1 class="text-white-200 font-semibold text-xl ">Premium</h1>
+          <div class="text-center py-4 px-7">
+              <h1 class="text-white text-4xl font-black">$49.00</h1>
+              <p class="text-white text-opacity-50 mt-2">Monthly</p>
+              <p class="text-white  mt-2">FREE SHIPPING</p>
+              
+          </div>
+          <div class="h-px bg-brightRedLight"></div>
+          <div class="text-center mt-3">
+              <p class="text-sm text-white text-opacity-80">
+                Pick up to 8 flavours from our premium coffee line, select prentation of whole bean or fresh ground and get 8 bags monthly (size: 1.8 oz. each)
+              </p>
+          </div>
+          <button class="w-full mt-6 mb-3 py-2 text-white font-semibold bg-brightRed hover:shadow-xl duration-200 hover:bg-brightRedSupLight">Buy Now</button>
+      </div>
+      <div class="py-12 sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-white z-30 ">
+      <h1 class="text-white-500 font-semibold text-xl ">Adventure</h1>
+          <div class="text-center py-4 px-7">
+              <h1 class="text-white-700 text-4xl font-black">39.00</h1>
+              <p class="text-white-500  mt-2">Monthly</p>
+              <p class="text-gray-500  mt-2">FREE SHIPPING</p>
+              
+          </div>
+          <div class="h-px bg-brightRed"></div>
+          <div class="text-center mt-3">
+              <p class="text-sm text-gray-400 mt-2">
+                Get 4 flavours of your choice from our artisan coffees line with 2 surprise premium flavors (size: 1.8 oz. each)
+              </p>
+          </div>
+          <button class="w-full mt-6 mb-3 py-2 text-white font-semibold bg-brightRed hover:shadow-xl duration-200 hover:bg-brightRedLight">Buy Now</button>
+      </div>
+  </div>
+   
+</section>
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <!-- Container to heading and testm blocks -->
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+          <!-- Heading -->
+          <h2 class="text-4xl font-bold text-center">
+            Hear it from our customers
+          </h2>
+          <!-- Testimonials Container -->
+          <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+            <!-- Testimonial 1 -->
+            <div
+              class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-brightRed md:w-1/3"
+            >
+            <img src="images/user3.jpg" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold text-white">Julia Bravo</h5>
+            <p class="text-sm text-white">
+              “This is the best suscription I ever used. I even gave it as a Christmas present, it's great gift for coffee lovers.”
+              </p>
+            </div>
+  
+            <!-- Testimonial 2 -->
+            <div
+              class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-brightRed md:flex md:w-1/3"
+            >
+              <img src="images/user2.jpg" class="w-16 -mt-14" alt="" />
+              <h5 class="text-lg font-bold text-white">Bob Reed</h5>
+              <p class="text-sm text-white">
+                “I really like the service. Boxes are never late and the surprise flavors of the month are something I really look forward to get each time.”
+              </p>
+            </div>
+  
+            <!-- Testimonial 3 -->
+            <div
+              class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-brightRed md:flex md:w-1/3"
+            >
+            <img src="images/user1.jpg" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold text-white">Alison Young</h5>
+            <p class="text-sm text-white">
+              “We save so much time and money with Brew Box. I can't believe we can have such quality every day and it's cheaper than everywhere else.”
+              </p>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="my-16">
+            <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              >Get a Box</a>
+          </div>
+        </div>
+      </section>
+  
+  
+      <!-- Footer -->
+      <footer class= "bg-brightRedLight">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+        >
+          <!-- Logo and social links container -->
+          <div
+            class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+          >
+            <div class="mx-auto my-6 text-center text-white md:hidden">
+              Copyright &copy; 2022, All Rights Reserved
+            </div>
+            <!-- Logo -->
+            <div>
+              <img src="images/logo.png" class="h-8" alt="" />
+            </div>
+            <!-- Social Links Container -->
+            <div class="flex justify-center space-x-4">
+              <!-- Link 1 -->
+              <a href="#">
+                <img src="images/fb.svg" alt="" class="h-8"/>Facebook</a>
+              <!-- Link 2 -->
+              <a href="#">
+                <img src="images/tw.svg" alt="" class="h-8"/>Twitter</a>
+              
+              <a href="#">
+                <img src="images/ig.svg" alt="" class="h-8" />Instagram </a>
+            </div>
+          </div>
+          <!-- List Container -->
+          <div class="flex justify-around space-x-32">
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed">Home</a>
+              <a href="#" class="hover:text-brightRed">Pricing</a>
+              <a href="#" class="hover:text-brightRed">Products</a>
+              <a href="#" class="hover:text-brightRed">About</a>
+            </div>
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed">Careers</a>
+              <a href="#" class="hover:text-brightRed">Community</a>
+              <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+            </div>
+          </div>
+  
+          <!-- Input Container -->
+          <div class="flex flex-col justify-between">
+            <form>
+              <div class="flex space-x-3">
+                <input
+                  type="text"
+                  class="flex-1 px-4 rounded-full focus:outline-none"
+                  placeholder="Updated in your inbox"
+                />
+                <button
+                  class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+                >
+                  Go
+                </button>
+              </div>
+            </form>
+            <div class="hidden text-white md:block">
+              Copyright &copy; 2022, All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
